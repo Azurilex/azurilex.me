@@ -1,1 +1,3 @@
-# azurilex.me
+# Projects
+### Ares (2016-2019)
+Ares was a level 7 (now known as level 6) Vanilla Lua to Roblox Lua Wrapper. I was able to achieve this by reverse engineering Roblox to find rLua C functions locations in memory and calling them from C++, hooking onto lua_gettop to grab the LuaState thread from Roblox. From there, as always, I had to bypass a few checks which was pretty much just turning the return check jz into a jmp, and then putting it back after thee function was properly called to avoid getting caught by memory check. From there, I developed Ares to wrap Vanilla Lua to Roblox Lua so that users could execute foreign lua scripts into Roblox's environment however they pleased. Ares had over 1,000 clients when development stopped. Here's a video of Ares being used in mid-2018: [https://www.youtube.com/watch?v=lubaIQWLIFw](https://www.youtube.com/watch?v=lubaIQWLIFw){:target="_blank"}
